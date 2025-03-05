@@ -9,9 +9,9 @@ version = "${version}"
 displayName = "Fossils Delight"
 authors = "Aethalis and legoaggelos"
 description = '''
-A Farmer's Delight and Fossils and Archaeology Revival addon
+An integration mod between Fossils and Archeology and Farmer’s Delight which focuses on creating prehistoric and delicious dishes!
 '''
-#logoFile = ""
+logoFile = "fossils_delight_logo.png"
 
 [[dependencies.fossils_delight]]
 modId = "forge"
