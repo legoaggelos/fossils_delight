@@ -5,5 +5,6 @@ public final class ExampleMod {
 
     public static void init() {
         // Write common init code here.
+        //Commit test
     }
 }
