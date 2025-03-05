@@ -1,6 +1,6 @@
 package com.github.legoaggelos.fossils_delight;
 
-public final class ExampleMod {
+public final class FossilsDelight {
     public static final String MOD_ID = "fossils_delight";
 
     public static void init() {

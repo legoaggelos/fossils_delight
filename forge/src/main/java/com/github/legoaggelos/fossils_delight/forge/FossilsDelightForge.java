@@ -4,15 +4,15 @@ import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import com.github.legoaggelos.fossils_delight.ExampleMod;
+import com.github.legoaggelos.fossils_delight.FossilsDelight;
 
-@Mod(ExampleMod.MOD_ID)
-public final class ExampleModForge {
-    public ExampleModForge() {
+@Mod(FossilsDelight.MOD_ID)
+public final class FossilsDelightForge {
+    public FossilsDelightForge() {
         // Submit our event bus to let Architectury API register our content on the right time.
-        EventBuses.registerModEventBus(ExampleMod.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        EventBuses.registerModEventBus(FossilsDelight.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
 
         // Run our common setup.
-        ExampleMod.init();
+        FossilsDelight.init();
     }
 }

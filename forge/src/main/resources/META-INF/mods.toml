@@ -1,15 +1,15 @@
 modLoader = "javafml"
 loaderVersion = "[40,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "MIT"
 
 [[mods]]
 modId = "fossils_delight"
 version = "${version}"
 displayName = "Fossils Delight"
-authors = "Me!"
+authors = "Aethalis and legoaggelos"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+A Farmer's Delight and Fossils and Archaeology Revival addon
 '''
 #logoFile = ""
 
@@ -32,4 +32,40 @@ modId = "architectury"
 mandatory = true
 versionRange = "[4.12.94,)"
 ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.fossils_delight]]
+modId = "geckolib3"
+mandatory = true
+versionRange = "[3.0.55,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.fossils_delight]]
+modId = "terrablender"
+mandatory = true
+versionRange = "[1.2.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fossils_delight]]
+modId = "morehitboxes"
+mandatory = true
+versionRange = "[1.7.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+
+[[dependencies.fossils_delight]]
+modId = "fossil"
+mandatory = true
+versionRange = "[9.1.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fossils_delight]]
+modId = "farmersdelight"
+mandatory = true
+versionRange = "[1.2.0,)"
+ordering = "NONE"
 side = "BOTH"
