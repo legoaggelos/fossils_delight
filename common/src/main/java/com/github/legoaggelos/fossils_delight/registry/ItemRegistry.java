@@ -2,9 +2,7 @@ package com.github.legoaggelos.fossils_delight.registry;
 
 import com.github.legoaggelos.fossils_delight.FossilsDelight;
 import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 
 public class ItemRegistry {

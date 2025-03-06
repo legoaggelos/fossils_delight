@@ -5,11 +5,9 @@ import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 
 import static com.github.teamfossilsarcheology.fossil.item.ModToolTiers.SCARAB;
-import static com.nhoryzon.mc.farmersdelight.registry.TagsRegistry.KNIVES;
 
 
 public class ItemRegistry {
