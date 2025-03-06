@@ -41,6 +41,10 @@ dependencies {
     modImplementation "curse.maven:fossils-223908:6204261"
     modImplementation "curse.maven:farmers-delight-398521:4679315"
 
+    //dev only
+    modImplementation("curse.maven:jei-238222:5846864")
+    modImplementation("maven.modrinth:jade:L2um3gq1")
+
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }

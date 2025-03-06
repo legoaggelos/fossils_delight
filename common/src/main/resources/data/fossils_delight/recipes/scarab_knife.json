@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "farmersdelight:diamond_knife"
+    },
+    {
+      "item": "fossil:scarab_gem"
+    }
+  ],
+  "result": {
+    "item": "fossils_delight:scarab_knife"
+  }
+}

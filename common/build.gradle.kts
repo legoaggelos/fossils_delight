@@ -12,23 +12,16 @@ plugins {
 
 }
 
+val enabled_platforms: String by rootProject
+val fabric_loader_version: String by rootProject
+val architectury_api_version: String by rootProject
+
 architectury {
-    platformSetupLoomIde()
-    fabric()
+    common(enabled_platforms.split(","))
 }
 
-loom {
-    accessWidenerPath.set(project(":common").loom.accessWidenerPath)
-}
 
-val common: Configuration by configurations.creating
-val shadowCommon: Configuration by configurations.creating
 
-configurations {
-    compileClasspath.get().extendsFrom(common)
-    runtimeClasspath.get().extendsFrom(common)
-    named("developmentFabric").get().extendsFrom(common)
-}
 
 dependencies {
     "mappings"(loom.layered {
@@ -67,54 +60,10 @@ dependencies {
             override fun hashCode() = METHOD_NAME_MAP.hashCode()
         })
     })
-    modImplementation ("net.fabricmc:fabric-loader:0.16.5")
-    modApi ("net.fabricmc.fabric-api:fabric-api:0.76.0+1.18.2")
-    // Remove the next line if you don't want to depend on the API
-    modApi ("dev.architectury:architectury-fabric:4.12.94")
-    modApi("teamreborn:energy:2.3.0")
-    modImplementation ("curse.maven:more-hitboxes-1115989:6203363")
-    modImplementation ("curse.maven:geckolib-388172:4181373")
-    modImplementation ("curse.maven:terrablender-fabric-565956:3957975")
+    modImplementation("net.fabricmc:fabric-loader:$fabric_loader_version")
+
+    // Architectury API. This is optional, and you can comment it out if you don't need it.
+    modImplementation("dev.architectury:architectury:$architectury_api_version")
     modImplementation ("curse.maven:fossils-223908:6204260")
-    modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-base:4.2.0")
-    modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:4.2.0")
-    modImplementation("maven.modrinth:midnightlib:0.4.4")
-    modImplementation("maven.modrinth:Wd844r7Q:1.18.2-02")
-    modImplementation("maven.modrinth:farmers-delight-fabric:1.2.5")
-    implementation("com.electronwill.night-config:core:3.6.6")
-    implementation("com.electronwill.night-config:toml:3.6.6")
-
-    //dev only
-    modImplementation("curse.maven:modmenu-308702:4145213")
-    modRuntimeOnly("maven.modrinth:jade:MSJGBHIo")
-    modImplementation("curse.maven:jei-238222:5846863")
-
-    common(project(path = ":common", configuration = "namedElements")) { isTransitive = false }
-    shadowCommon(project(path = ":common", configuration = "transformProductionFabric")) { isTransitive = false }
-}
-tasks {
-    processResources {
-        inputs.property("version", project.version)
-        filesMatching("fabric.mod.json") {
-            expand(mutableMapOf("version" to project.version))
-        }
-    }
-    shadowJar {
-        configurations = listOf(shadowCommon)
-        archiveClassifier.set("dev-shadow")
-
-    }
-
-
-
-    remapJar {
-        injectAccessWidener.set(true)
-        inputFile.set(shadowJar.get().archiveFile)
-        dependsOn(shadowJar)
-    }
 }
 
-val javaComponent = components["java"] as AdhocComponentWithVariants
-javaComponent.withVariantsFromConfiguration(configurations["shadowRuntimeElements"]) {
-    skip()
-}
