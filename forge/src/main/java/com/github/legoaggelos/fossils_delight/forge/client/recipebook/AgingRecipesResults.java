@@ -1,7 +1,6 @@
 package com.github.legoaggelos.fossils_delight.forge.client.recipebook;
 
 import com.github.legoaggelos.fossils_delight.forge.registry.ItemRegistry;
-import net.minecraft.world.item.Item;
 
 import java.util.ArrayList;
 import java.util.List;

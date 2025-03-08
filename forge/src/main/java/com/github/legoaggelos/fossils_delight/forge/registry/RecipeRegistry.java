@@ -7,9 +7,6 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import vectorwing.farmersdelight.FarmersDelight;
-import vectorwing.farmersdelight.common.crafting.CookingPotRecipe;
-import vectorwing.farmersdelight.common.crafting.CuttingBoardRecipe;
 
 public class RecipeRegistry
 {

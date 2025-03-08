@@ -1,6 +1,5 @@
 package com.github.legoaggelos.fossils_delight.fabric.item;
 
-import com.nhoryzon.mc.farmersdelight.item.ModItemSettings;
 import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.Tier;
 
@@ -60,8 +59,8 @@ public class CustomKnifeItem extends DiggerItem {
             Player player = context.getPlayer();
             if (player != null && !world.isClientSide()) {
                 Direction direction = facing.getAxis() == Axis.Y ? player.getDirection().getOpposite() : facing;
-                world.playSound((Player)null, pos, SoundEvents.PUMPKIN_CARVE, SoundSource.BLOCKS, 1.0F, 1.0F);
-                world.setBlock(pos, (BlockState)Blocks.CARVED_PUMPKIN.defaultBlockState().setValue(CarvedPumpkinBlock.FACING, direction), 11);
+                world.playSound(null, pos, SoundEvents.PUMPKIN_CARVE, SoundSource.BLOCKS, 1.0F, 1.0F);
+                world.setBlock(pos, Blocks.CARVED_PUMPKIN.defaultBlockState().setValue(CarvedPumpkinBlock.FACING, direction), 11);
                 ItemEntity itemEntity = new ItemEntity(world, (double)pos.getX() + (double)0.5F + (double)direction.getStepX() * 0.65, (double)pos.getY() + 0.1, (double)pos.getZ() + (double)0.5F + (double)direction.getStepZ() * 0.65, new ItemStack(Items.PUMPKIN_SEEDS, 4));
                 itemEntity.setDeltaMovement(0.05 * (double)direction.getStepX() + world.getRandom().nextDouble() * 0.02, 0.05, 0.05 * (double)direction.getStepZ() + world.getRandom().nextDouble() * 0.02);
                 world.addFreshEntity(itemEntity);

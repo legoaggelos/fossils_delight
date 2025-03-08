@@ -1,7 +1,5 @@
 package com.github.legoaggelos.fossils_delight.forge.block.entity.menu;
 
-
-import com.github.legoaggelos.fossils_delight.FossilsDelight;
 import com.github.legoaggelos.fossils_delight.forge.FossilsDelightForge;
 import com.github.legoaggelos.fossils_delight.forge.registry.BlockRegistry;
 import com.github.legoaggelos.fossils_delight.forge.registry.MenuRegistry;
@@ -23,7 +21,6 @@ import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.wrapper.RecipeWrapper;
 import vectorwing.farmersdelight.FarmersDelight;
 import com.github.legoaggelos.fossils_delight.forge.block.entity.AgingPotBlockEntity;
-import com.github.legoaggelos.fossils_delight.forge.block.entity.menu.*;
 import vectorwing.farmersdelight.common.tag.ModTags;
 
 import java.util.Objects;

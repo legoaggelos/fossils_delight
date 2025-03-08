@@ -7,9 +7,7 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import vectorwing.farmersdelight.common.item.KnifeItem;
-import vectorwing.farmersdelight.common.registry.ModBlocks;
 
 import static com.github.teamfossilsarcheology.fossil.item.ModToolTiers.SCARAB;
 

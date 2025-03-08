@@ -15,9 +15,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import vectorwing.farmersdelight.FarmersDelight;
 
-import vectorwing.farmersdelight.common.Configuration;
 import com.github.legoaggelos.fossils_delight.forge.block.entity.menu.AgingPotMenu;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 

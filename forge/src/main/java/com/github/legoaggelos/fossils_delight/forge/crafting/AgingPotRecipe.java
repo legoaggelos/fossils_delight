@@ -20,7 +20,6 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.items.wrapper.RecipeWrapper;
 import net.minecraftforge.registries.ForgeRegistryEntry;
-import vectorwing.farmersdelight.FarmersDelight;
 import com.github.legoaggelos.fossils_delight.forge.client.recipebook.AgingPotRecipeBookTab;
 
 import javax.annotation.Nullable;

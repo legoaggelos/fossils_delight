@@ -1,6 +1,5 @@
 package com.github.legoaggelos.fossils_delight.forge.client.gui;
 
-import com.github.legoaggelos.fossils_delight.FossilsDelight;
 import net.minecraft.client.gui.screens.recipebook.RecipeBookComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -8,7 +7,6 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
-import net.minecraftforge.items.wrapper.RecipeWrapper;
 import vectorwing.farmersdelight.FarmersDelight;
 import com.github.legoaggelos.fossils_delight.forge.crafting.AgingPotRecipe;
 import vectorwing.farmersdelight.common.crafting.CookingPotRecipe;

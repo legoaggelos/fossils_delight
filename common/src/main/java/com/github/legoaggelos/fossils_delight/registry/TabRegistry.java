@@ -1,12 +1,10 @@
 package com.github.legoaggelos.fossils_delight.registry;
 
 import com.github.teamfossilsarcheology.fossil.entity.prehistoric.base.PrehistoricEntityInfo;
-import com.github.teamfossilsarcheology.fossil.item.ModItems;
 import dev.architectury.registry.CreativeTabRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 import java.util.Arrays;
 

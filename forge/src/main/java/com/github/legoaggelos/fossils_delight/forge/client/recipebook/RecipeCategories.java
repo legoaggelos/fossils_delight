@@ -9,11 +9,9 @@ import net.minecraft.client.RecipeBookCategories;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.client.RecipeBookRegistry;
-import vectorwing.farmersdelight.FarmersDelight;
 
 import vectorwing.farmersdelight.common.item.DrinkableItem;
 import vectorwing.farmersdelight.common.registry.ModItems;
-import vectorwing.farmersdelight.common.registry.ModRecipeTypes;
 
 import java.util.function.Supplier;
 

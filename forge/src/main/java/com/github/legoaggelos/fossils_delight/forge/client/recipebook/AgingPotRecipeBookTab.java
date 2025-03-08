@@ -1,7 +1,5 @@
 package com.github.legoaggelos.fossils_delight.forge.client.recipebook;
 
-import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
-
 public enum AgingPotRecipeBookTab
 {
 	MEALS("meals"),

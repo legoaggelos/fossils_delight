@@ -3,7 +3,6 @@ package com.github.legoaggelos.fossils_delight.fabric.registry;
 import com.github.legoaggelos.fossils_delight.FossilsDelight;
 import com.github.legoaggelos.fossils_delight.fabric.item.CustomKnifeItem;
 import com.github.legoaggelos.fossils_delight.registry.TabRegistry;
-import com.nhoryzon.mc.farmersdelight.item.KnifeItem;
 import com.nhoryzon.mc.farmersdelight.item.ModItemSettings;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
