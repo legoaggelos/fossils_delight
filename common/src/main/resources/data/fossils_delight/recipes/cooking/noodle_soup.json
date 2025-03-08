@@ -1,0 +1,23 @@
+{
+  "type": "fossils_delight:cooking",
+  "recipe_book_tab": "meals",
+  "ingredients": [
+    {
+      "tag": "forge:pasta"
+    },
+    {
+      "tag": "forge:cooked_eggs"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "tag": "forge:raw_pork"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:noodle_soup"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,32 @@
+{
+  "type": "fossils_delight:cooking",
+  "recipe_book_tab": "meals",
+  "ingredients": [
+    {
+      "tag": "forge:crops/rice"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "tag": "forge:berries"
+    },
+    {
+      "tag": "forge:vegetables"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:stuffed_pumpkin_block"
+  },
+  "container": {
+    "item": "minecraft:pumpkin"
+  },
+  "experience": 2.0,
+  "cookingtime": 400
+}

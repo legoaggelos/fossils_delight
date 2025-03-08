@@ -1,0 +1,20 @@
+{
+  "type": "fossils_delight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:apple_cider"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,20 @@
+{
+  "type": "fossils_delight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "minecraft:apple"
+    }
+  ],
+  "result": {
+    "item": "fossils_delight:scarab_knife"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

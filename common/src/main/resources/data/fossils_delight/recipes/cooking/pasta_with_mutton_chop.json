@@ -1,0 +1,20 @@
+{
+  "type": "fossils_delight:cooking",
+  "recipe_book_tab": "meals",
+  "ingredients": [
+    {
+      "tag": "forge:raw_mutton"
+    },
+    {
+      "tag": "forge:pasta"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:pasta_with_mutton_chop"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

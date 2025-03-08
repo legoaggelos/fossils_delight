@@ -1,9 +1,12 @@
 package com.github.legoaggelos.fossils_delight.fabric;
 
 import com.github.legoaggelos.fossils_delight.fabric.registry.ItemRegistry;
+import com.github.legoaggelos.fossils_delight.registry.TabRegistry;
 import net.fabricmc.api.ModInitializer;
 
 import com.github.legoaggelos.fossils_delight.FossilsDelight;
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.item.ItemStack;
 
 public final class FossilsDelightFabric implements ModInitializer {
     @Override
@@ -14,7 +17,6 @@ public final class FossilsDelightFabric implements ModInitializer {
 
         // Run our common setup.
         FossilsDelight.init();
-
         ItemRegistry.ITEMS.register();
     }
 }
