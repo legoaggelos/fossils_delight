@@ -2,6 +2,7 @@ package com.github.legoaggelos.fossils_delight.forge;
 
 import com.github.legoaggelos.fossils_delight.forge.client.ClientSetup;
 import com.github.legoaggelos.fossils_delight.forge.registry.*;
+import com.mojang.datafixers.types.Func;
 import dev.architectury.platform.forge.EventBuses;
 import net.minecraft.world.inventory.RecipeBookType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,8 +27,7 @@ public final class FossilsDelightForge {
         MenuRegistry.MENUS.register(modEventBus);
         RecipeSerializerRegistry.RECIPE_SERIALIZERS.register(modEventBus);
         RecipeRegistry.RECIPE_TYPES.register(modEventBus);
-
-
+        FunctionRegistry.LOOT_FUNCTIONS.register(modEventBus);
 
         // Run our common setup.
         FossilsDelight.init();

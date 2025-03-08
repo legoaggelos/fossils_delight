@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "fossils_delight:block/aging_pot",
 		"1": "fossils_delight:block/aging_pot_side_handle",
-		"particle": "fossils_delight/block/ancientpot"
+		"particle": "fossils_delight:block/ancientpothandle"
 	},
 	"elements": [
 		{

@@ -8,6 +8,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -186,13 +187,13 @@ public class AgingPotBlock extends BaseEntityBlock implements SimpleWaterloggedB
 
 		if (!mealStack.isEmpty()) {
 			MutableComponent textServingsOf = mealStack.getCount() == 1
-					? TextUtils.getTranslation("tooltip.aging_pot.single_serving")
-					: TextUtils.getTranslation("tooltip.aging_pot.many_servings", mealStack.getCount());
+					? new TranslatableComponent("fossils_delight.tooltip.aging_pot.single_serving")
+					: new TranslatableComponent("fossils_delight.tooltip.aging_pot.many_servings", mealStack.getCount());
 			tooltip.add(textServingsOf.withStyle(ChatFormatting.GRAY));
 			MutableComponent textMealName = mealStack.getHoverName().copy();
 			tooltip.add(textMealName.withStyle(mealStack.getRarity().color));
 		} else {
-			MutableComponent textEmpty = TextUtils.getTranslation("tooltip.aging_pot.empty");
+			MutableComponent textEmpty = new TranslatableComponent("fossils_delight.tooltip.aging_pot.empty");
 			tooltip.add(textEmpty.withStyle(ChatFormatting.GRAY));
 		}
 	}

@@ -12,6 +12,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
@@ -112,7 +113,7 @@ public class AgingPotBlockEntity extends SyncedBlockEntity implements MenuProvid
 		}
 
 		CompoundTag compound = agingPotStack.getTagElement("BlockEntityTag");
-		if (compound != null) {
+		if (compound != null ) {
 			CompoundTag inventoryTag = compound.getCompound("Inventory");
 			if (inventoryTag.contains("Items", 9)) {
 				ItemStackHandler handler = new ItemStackHandler();
@@ -499,7 +500,7 @@ public class AgingPotBlockEntity extends SyncedBlockEntity implements MenuProvid
 
 	@Override
 	public Component getName() {
-		return customName != null ? customName : TextUtils.getTranslation("container.aging_pot");
+		return customName != null ? customName : new TranslatableComponent("fossils_delight.container.aging_pot");
 	}
 
 	@Override

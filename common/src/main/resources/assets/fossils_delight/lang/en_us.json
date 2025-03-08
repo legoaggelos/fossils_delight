@@ -1,4 +1,12 @@
 {
   "item.fossils_delight.scarab_knife": "Scarab Knife",
-  "itemGroup.fossils_delight.fossils_delight_tab": "Fossils Delight"
+  "itemGroup.fossils_delight.fossils_delight_tab": "Fossils Delight",
+  "block.fossils_delight.aging_pot": "Aging Pot",
+  "fossils_delight.container.aging_pot": "Aging Pot",
+  "fossils_delight.container.aging_pot.served_on": "Served on: %s",
+  "fossils_delight.container.aging_pot.not_heated": "Needs heat from below",
+  "fossils_delight.container.aging_pot.heated": "Heated",
+  "fossils_delight.tooltip.aging_pot.empty": "Empty",
+  "fossils_delight.tooltip.aging_pot.single_serving": "Holds 1 serving of:",
+  "fossils_delight.tooltip.aging_pot.many_servings": "Holds %s servings of:"
 }

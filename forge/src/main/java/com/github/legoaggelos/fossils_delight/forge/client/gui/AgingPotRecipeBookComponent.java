@@ -2,6 +2,7 @@ package com.github.legoaggelos.fossils_delight.forge.client.gui;
 
 import net.minecraft.client.gui.screens.recipebook.RecipeBookComponent;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
@@ -31,7 +32,7 @@ public class AgingPotRecipeBookComponent extends RecipeBookComponent
 	@Override
 	@Nonnull
 	protected Component getRecipeFilterName() {
-		return TextUtils.getTranslation("container.recipe_book.cookable");
+		return new TranslatableComponent("fossils_delight.container.recipe_book.cookable");
 	}
 
 	@Override

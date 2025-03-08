@@ -10,6 +10,7 @@ import net.minecraft.client.gui.screens.recipebook.RecipeBookComponent;
 import net.minecraft.client.gui.screens.recipebook.RecipeUpdateListener;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.ClickType;
@@ -89,8 +90,8 @@ public class AgingPotScreen extends AbstractContainerScreen<AgingPotMenu> implem
 	private void renderHeatIndicatorTooltip(PoseStack ms, int mouseX, int mouseY) {
 		if (this.isHovering(HEAT_ICON.x, HEAT_ICON.y, HEAT_ICON.width, HEAT_ICON.height, mouseX, mouseY)) {
 			List<Component> tooltip = new ArrayList<>();
-			String key = "container.a_pot." + (this.menu.isHeated() ? "heated" : "not_heated");
-			tooltip.add(TextUtils.getTranslation(key, menu));
+			String key = "container.aging_pot." + (this.menu.isHeated() ? "heated" : "not_heated");
+			tooltip.add(new TranslatableComponent("fossils_delight." + key, menu));
 			this.renderComponentTooltip(ms, tooltip, mouseX, mouseY);
 		}
 	}
@@ -106,7 +107,7 @@ public class AgingPotScreen extends AbstractContainerScreen<AgingPotMenu> implem
 				ItemStack containerStack = this.menu.blockEntity.getContainer();
 				String container = !containerStack.isEmpty() ? containerStack.getItem().getDescription().getString() : "";
 
-				tooltip.add(TextUtils.getTranslation("container.aging_pot.served_on", container).withStyle(ChatFormatting.GRAY));
+				tooltip.add(new TranslatableComponent("fossils_delight.container.aging_pot.served_on", container).withStyle(ChatFormatting.GRAY));
 
 				this.renderComponentTooltip(ms, tooltip, mouseX, mouseY);
 			} else {
